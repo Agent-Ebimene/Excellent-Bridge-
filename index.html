@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Law Firm</title>
+    <!--Animate on scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Fontawesome-->
     <link
       rel="stylesheet"
@@ -14,31 +16,95 @@
     <link rel="stylesheet" href="./CSS/main.css" />
   </head>
   <body>
-    <section class="container"></section>
     <!--Menu-->
 
     <nav class="menu-section">
       <!--mobile menu-->
       <article class="mobile-menu">
         <div class="menu-bar-box">
-          <span>
+          <span class="menu-bars">
             <i class="fa fa-bars menu-bar" aria-hidden="true"></i>
           </span>
         </div>
-        <div class="menu-logo-box">
+        <div class="menu-logo-box" class="company-logo">
           <img src="./assets/images/logo.png" alt="" />
         </div>
       </article>
+
+      <!--Desktop Nav-->
+      <section class="desktop-nav">
+        <a href="" class="company-logo">
+          <img src="./assets/images/logo.png" alt="Company Logo" />
+        </a>
+        <div class="desktop-links-box">
+          <ul class="desktop-links">
+            <li><a href="./index.html" class="desktop-link">Home</a></li>
+            <li><a href="#service-section" class="desktop-link">About</a></li>
+            <li>
+              <a href="#practice-section" class="desktop-link"
+                >Practice Areas</a
+              >
+            </li>
+            <li><a href="#attorney" class="desktop-link">Attorneys</a></li>
+            <li><a href="#why-choose-us" class="desktop-link">Why Us</a></li>
+            <!-- <li><a href="" class="desktop-link">Testimonials</a></li> -->
+
+            <li><a href="#contact" class="desktop-link">Contact</a></li>
+          </ul>
+        </div>
+      </section>
+      <!--Side Menu-->
+      <section class="side-menu">
+        <div class="side-menu-logo-box">
+          <a href="" class="side-bar-logo company-logo">
+            <img src="./assets/images/logo.png" alt="Company Logo" />
+          </a>
+          <span id="close-btn">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </div>
+        <ul class="side-menu-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#service-section">About</a></li>
+          <li>
+            <a href="#practice-section">Practice Areas</a>
+          </li>
+          <li><a href="#attorney">Attorneys</a></li>
+          <li><a href="#why-choose-us">Why Us</a></li>
+          <!-- <li><a href="">Testimonials</a></li> -->
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
     </nav>
     <!--End of Menu-->
     <!--Banner section-->
-    <section class="banner-section">
-      <article class="slider-1 slider-wrapper">
+    <section>
+      <article
+        class="slider-1 slider-wrapper"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-bottom"
+      >
         <span>
           <i class="fa fa-chevron-left banner-icon" aria-hidden="true"></i>
         </span>
         <div class="banner-text-box">
-          <h1>
+          <h1
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-bottom"
+          >
             <span> WE CREATE </span> <br />
             AWESOME STUFF
           </h1>
@@ -48,27 +114,60 @@
           <i class="fa fa-chevron-right banner-icon" aria-hidden="true"></i>
         </span>
       </article>
-      <article class="slider-2 slider-wrapper">
+      <!-- <article class="slider-2 slider-wrapper">
         <span>
           <i class="fa fa-chevron-left banner-icon" aria-hidden="true"></i>
         </span>
         <div class="banner-text-box">
-          <h1>The Law</h1>
-          <a href="#" class="banner-link">We fight for you</a>
+          <h1
+            data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-bottom"
+          >
+            The Law
+          </h1>
+          <a
+            href="#"
+            class="banner-link"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-bottom"
+            >We fight for you</a
+          >
         </div>
         <span>
           <i class="fa fa-chevron-right banner-icon" aria-hidden="true"></i>
         </span>
-      </article>
+      </article> -->
     </section>
     <!--End of banner section-->
 
     <!--Services-->
-    <section class="service-section">
-      <div class="team-img-box">
+    <section class="service-section" id="service-section">
+      <div class="service-bg-img-box">
         <img src="./assets/images/about.png" alt="" />
       </div>
-      <div class="main-services">
+      <div
+        class="main-services"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-bottom"
+      >
         <article class="single-service">
           <div class="service-icon-box">
             <span>
@@ -135,7 +234,7 @@
       <a href="" class="advert-link">Click Here</a>
     </section>
     <!--Practice areas-->
-    <section class="practice-section">
+    <section class="practice-section" id="practice-section">
       <article class="section-header">
         <h3>Practice Areas</h3>
         <div class="underline"></div>
@@ -231,56 +330,243 @@
         </article>
       </div>
     </section>
+
+    <!-- Consultation Center-->
+    <section class="consultation-section">
+      <header class="consultation-header">
+        <h5 class="consultation-small-header">We call you back</h5>
+        <h3 class="consultation-main-header">
+          Request a Free<br />
+          Consultation
+        </h3>
+        <p>
+          Our team is composed of senior-level public relations consultants with
+          editorial and creative skills that have been built over years of
+          delivering PR services to top businesses. Your Name
+        </p>
+      </header>
+      <form action="" class="consultation-form">
+        <div class="form-control">
+          <p>Your Name</p>
+          <input type="text" placeholder="Your Name" />
+        </div>
+        <div class="form-control">
+          <p>Email Address</p>
+          <input type="email" placeholder="Message" />
+        </div>
+        <div class="form-control">
+          <p>Email Address</p>
+          <input type="tel" placeholder="Phone" />
+        </div>
+        <button type="submit" class="consultation-submit">
+          SUBMIT REQUEST
+        </button>
+      </form>
+    </section>
+    <!--End of Center-->
+    <!--Team Section-->
+    <section class="team-section" id="attorney">
+      <div class="header-container">
+        <header class="team-header">
+          <h5 class="main-team-text">OUR MAIN TEAM</h5>
+          <h3 class="attorney-text">Meet our Attorneys</h3>
+          <div class="team-header-text">
+            <p>
+              Fusce vulputate eleifend sapien. Vestibulum purus quam,
+              scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan
+              lorem in dui. Cras ultricies mi eu.
+            </p>
+          </div>
+        </header>
+        <a href="#contact-section" class="team-header-link">CONTACT US</a>
+      </div>
+      <article class="team-members">
+        <div class="single-team-member">
+          <div class="member-img-container">
+            <img src="./assets/images/team-1.jpg" alt="" class="member-img" />
+            <div class="member-details">
+              <ul class="member-icon-box">
+                <li class="single-social-icon-box">
+                  <a href="">
+                    <span> <i class="fa-brands fa-facebook-f"></i></span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href=""
+                    ><span>
+                      <i class="fa-brands fa-instagram instagram"></i> </span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href=""
+                    ><span> <i class="fa-brands fa-twitter"></i> </span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href="">
+                    <span><i class="fab fa-linkedin-in"></i></span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href="">
+                    <span>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h5 class="member-name">Rowland Greg Mojenskyi</h5>
+          <p class="member-position">Bar President / Criminal Lawyer</p>
+        </div>
+        <div class="single-team-member">
+          <div class="member-img-container">
+            <img src="./assets/images/team-2.jpg" alt="" class="member-img" />
+            <div class="member-details">
+              <ul class="member-icon-box">
+                <li class="single-social-icon-box">
+                  <a href="">
+                    <span> <i class="fa-brands fa-facebook-f"></i></span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href=""
+                    ><span>
+                      <i class="fa-brands fa-instagram instagram"></i> </span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href=""
+                    ><span> <i class="fa-brands fa-twitter"></i> </span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href="">
+                    <span><i class="fab fa-linkedin-in"></i></span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href="">
+                    <span>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h5 class="member-name">Denton Aaron Incerman</h5>
+          <p class="member-position">Associate / Family Lawyer</p>
+        </div>
+        <div class="single-team-member">
+          <div class="member-img-container">
+            <img src="./assets/images/team-3.jpg" alt="" class="member-img" />
+            <div class="member-details">
+              <ul class="member-icon-box">
+                <li class="single-social-icon-box">
+                  <a href="">
+                    <span> <i class="fa-brands fa-facebook-f"></i></span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href=""
+                    ><span>
+                      <i class="fa-brands fa-instagram instagram"></i> </span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href=""
+                    ><span> <i class="fa-brands fa-twitter"></i> </span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href="">
+                    <span><i class="fab fa-linkedin-in"></i></span
+                  ></a>
+                </li>
+                <li class="single-social-icon-box">
+                  <a href="">
+                    <span>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h5 class="member-name">Hazzy Wilbur Conaway</h5>
+          <p class="member-position">Criminal Lawyer</p>
+        </div>
+      </article>
+    </section>
+    <!--End of Team Section-->
     <!--Unique Features Section-->
-    <section class="unique-features-section">
+    <section class="unique-features-section" id="why-choose-us">
       <div class="feature-img-box">
         <img src="./assets/images/whyus.jpg" alt="" />
       </div>
-      <article class="section-header feature-header">
-        <h3>Why Choose theLaw firm</h3>
-        <div class="underline"></div>
-      </article>
-      <article class="firm-details">
-        <p>
-          Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque
-          ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras
-          ultricies mi eu turpis drerit fringilla. Vestibulum ante ipsum primis
-        </p>
-      </article>
-      <div class="firm-features">
-        <article class="single-firm-feature">
-          <div class="feature-icon-box">
-            <span>
-              <i class="fa fa-male" aria-hidden="true"></i>
-            </span>
-          </div>
-          <div class="practice-details">
-            <h5>We have best Attorneys team</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
+      <div class="features-details">
+        <article class="section-header feature-header">
+          <h3>Why Choose theLaw firm</h3>
+          <div class="underline"></div>
         </article>
-        <article class="single-firm-feature">
-          <div class="feature-icon-box">
-            <span>
-              <i class="fa fa-database" aria-hidden="true"></i>
-            </span>
-          </div>
-          <div class="practice-details">
-            <h5>Best Case Strategy</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
+        <article class="firm-details">
+          <p>
+            Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque
+            ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.
+            Cras ultricies mi eu turpis drerit fringilla. Vestibulum ante ipsum
+            primis
+          </p>
         </article>
-        <article class="single-firm-feature">
-          <div class="feature-icon-box">
-            <span>
-              <i class="fa fa-flag" aria-hidden="true"></i>
-            </span>
-          </div>
-          <div class="practice-details">
-            <h5>Review your Case Documents</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
-        </article>
+        <div
+          class="firm-features"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <article class="single-firm-feature">
+            <div class="feature-icon-box">
+              <span>
+                <i class="fa fa-male" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="practice-details">
+              <h5>We have best Attorneys team</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </article>
+          <article class="single-firm-feature">
+            <div class="feature-icon-box">
+              <span>
+                <i class="fa fa-database" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="practice-details">
+              <h5>Best Case Strategy</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </article>
+          <article class="single-firm-feature">
+            <div class="feature-icon-box">
+              <span>
+                <i class="fa fa-flag" aria-hidden="true"></i>
+              </span>
+            </div>
+            <div class="practice-details">
+              <h5>Review your Case Documents</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
     <section class="case-sample-section">
@@ -288,17 +574,17 @@
         <div class="sample-box">
           <h5>4025</h5>
         </div>
-        <p>Successful Cases</p>
-        <p>
-          Curabitur laoreet, arcu at molestie tempus,felis dui egestas nunc.
+        <p class="sample-header">Successful Cases</p>
+        <p class="sample-text">
+          Curabitur laoreet,arcu at molestie tempus,felis dui egestas nunc.
         </p>
       </article>
       <article class="single-sample">
         <div class="sample-box">
           <h5>3270</h5>
         </div>
-        <p>Trusted Clients</p>
-        <p>
+        <p class="sample-header">Trusted Clients</p>
+        <p class="sample-text">
           Curabitur laoreet, arcu at molestie tempus,felis dui egestas nunc.
         </p>
       </article>
@@ -306,8 +592,8 @@
         <div class="sample-box">
           <h5>6349</h5>
         </div>
-        <p>Case Studies</p>
-        <p>
+        <p class="sample-header">Case Studies</p>
+        <p class="sample-text">
           Curabitur laoreet, arcu at molestie tempus,felis dui egestas nunc.
         </p>
       </article>
@@ -315,82 +601,139 @@
         <div class="sample-box">
           <h5>851</h5>
         </div>
-        <p>Registered Case</p>
-        <p>
+        <p class="sample-header">Registered Case</p>
+        <p class="sample-text">
           Curabitur laoreet, arcu at molestie tempus,felis dui egestas nunc.
         </p>
       </article>
     </section>
     <!--Footer Section-->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="contact-header">
         <h6>We can help You</h6>
         <h4>Contact Us</h4>
       </div>
-      <form action="" class="contact-form">
-        <div class="form-control">
-          <input type="text" placeholder="Your Name" />
-        </div>
-        <div class="form-control">
-          <input type="text" placeholder="Message" />
-        </div>
-        <div class="form-control">
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="5"
-            placeholder="Message"
-          ></textarea>
-        </div>
-        <button type="submit" class="contact-submit">SUBMIT REQUEST</button>
-      </form>
-      <article class="contact-details">
-        <div class="single-contact-item">
-          <div class="contact-detail-icon-box">
-            <span>
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </span>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.17560744853!2d3.3742289130806116!3d6.499439895298498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c6109587b23%3A0x6ac62bdf8a785fba!2s1a%20Hughes%20Ave%2C%20Yaba%20101245%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sde!4v1659895378297!5m2!1sen!2sde"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="google__map"
+      ></iframe>
+      <div class="footer-items-box">
+        <form action="" class="contact-form">
+          <div class="form-control">
+            <input type="text" placeholder="Your Name" />
           </div>
-          <p>contact@thelaw.com</p>
-        </div>
-        <div class="single-contact-item">
-          <div class="contact-detail-icon-box">
-            <span>
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-            </span>
+          <div class="form-control">
+            <input type="text" placeholder="Message" />
           </div>
-          <p>123, lorem ipsum, New york, USA</p>
-        </div>
-        <div class="single-contact-item">
-          <ul class="social-icons-box">
-            <li class="single-social-icon-box">
-              <a href="">
-                <span> <i class="fa-brands fa-facebook-f"></i></span
-              ></a>
-            </li>
-            <li class="single-social-icon-box">
-              <a href=""
-                ><span> <i class="fa-brands fa-instagram instagram"></i> </span
-              ></a>
-            </li>
-            <li class="single-social-icon-box">
-              <a href=""
-                ><span> <i class="fa-brands fa-twitter"></i> </span
-              ></a>
-            </li>
-            <li class="single-social-icon-box">
-              <a href="">
-                <span><i class="fab fa-linkedin-in"></i></span
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </article>
+          <div class="form-control">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="contact-submit">SUBMIT REQUEST</button>
+        </form>
+        <article class="contact-details">
+          <div class="single-contact-item">
+            <div class="contact-detail-icon-box">
+              <span>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </span>
+            </div>
+            <p>contact@thelaw.com</p>
+          </div>
+          <div class="single-contact-item">
+            <div class="contact-detail-icon-box">
+              <span>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </span>
+            </div>
+            <p>123, lorem ipsum, New york, USA</p>
+          </div>
+          <div class="single-contact-item">
+            <ul class="social-icons-box">
+              <li class="single-social-icon-box">
+                <a href="">
+                  <span> <i class="fa-brands fa-facebook-f"></i></span
+                ></a>
+              </li>
+              <li class="single-social-icon-box">
+                <a href=""
+                  ><span>
+                    <i class="fa-brands fa-instagram instagram"></i> </span
+                ></a>
+              </li>
+              <li class="single-social-icon-box">
+                <a href=""
+                  ><span> <i class="fa-brands fa-twitter"></i> </span
+                ></a>
+              </li>
+              <li class="single-social-icon-box">
+                <a href="">
+                  <span><i class="fab fa-linkedin-in"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
+    <!-- Client Section
+    <section class="client-section">
+      <article class="section-header client-header">
+        <h3>Happy Clients</h3>
+        <div class="underline"></div>
+      </article>
+      <div class="clients-wrapper">
+        <article class="single-client">
+          <p>
+            Because it is pleasure, but because those who do not know how to
+            pursue pleasure rationally encounter consequences that are extremely
+            painful. Nor again is there anyone who loves or pursues or desires
+            to obtain pain of itself.
+          </p>
+          <p>sam isbister - mass impressions</p>
+        </article>
+        <article class="single-client">
+          <p>
+            Because it is pleasure, but because those who do not know how to
+            pursue pleasure rationally encounter consequences that are extremely
+            painful. Nor again is there anyone who loves or pursues or desires
+            to obtain pain of itself.
+          </p>
+          <p>sam isbister - mass impressions</p>
+        </article>
+        <article class="single-client">
+          <p>
+            Because it is pleasure, but because those who do not know how to
+            pursue pleasure rationally encounter consequences that are extremely
+            painful. Nor again is there anyone who loves or pursues or desires
+            to obtain pain of itself.
+          </p>
+          <p>sam isbister - mass impressions</p>
+        </article>
+      </div>
+    </section> -->
     <footer class="footer-logo-box">
       <img src="./assets/images/logo-footer.png" alt="" />
       <p>© 2017 All Rights Reserved theLaw Firm</p>
     </footer>
+    <!--Script -->
+    <!--Animate on scroll Library codes-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   </body>
+  <script src="Scripts/app.js"></script>
 </html>

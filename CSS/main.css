@@ -154,9 +154,9 @@ Desktop
   .mobile-menu {
     display: flex;
   }
-  .menu-logo-box {
+  /* .menu-logo-box {
     margin-right: -3rem;
-  }
+  } */
   .menu-bar-box {
     margin-right: 6rem;
   }
@@ -917,14 +917,16 @@ Case Studies
   .sample-box {
     width: 80px;
     height: 80px;
-    margin-left: -1.5rem;
   }
-  .sample-header {
-    margin-left: -2rem;
+  .case-sample-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+
   .sample-text {
     max-width: 8rem;
     margin-left: -1rem;
+    text-align: justify;
   }
 }
 @media screen and (min-width: 900px) {
@@ -1032,8 +1034,18 @@ Clients Section
 
 .client-section {
   padding-block: 2rem;
+  padding-inline: 1.5rem;
 }
-
+.single-client {
+  margin-block: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.single-client p {
+  max-width: 700px;
+  text-align: justify;
+}
 /*
 footer section
 */
